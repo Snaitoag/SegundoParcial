@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Formulario de Asignaturas</title>
+</head>
+<body>
+<h1>Formulario de Asignatura</h1>
+<form th:action="@{/user/asignaturas/guardar}" th:object="${asignatura}" method="post">
+    <div>
+        <label for="nombre">Nombre:</label>
+        <input id="nombre" type="text" th:field="*{nombre}">
+    </div>
+    <div>
+        <label for="descripcion">Descripción:</label>
+        <input id="descripcion" type="text" th:field="*{descripcion}">
+    </div>
+    <div>
+        <label for="salon">Salón:</label>
+        <input id="salon" type="number" th:field="*{salon}">
+    </div>
+    <div>
+        <label for="horaInicio">Hora de Inicio:</label>
+        <input id="horaInicio" type="time" th:field="*{horaInicio}">
+    </div>
+    <div>
+        <label for="horaFin">Hora de Fin:</label>
+        <input id="horaFin" type="time" th:field="*{horaFin}">
+    </div>
+    <button type="submit">Guardar</button>
+</form>
+</body>
+</html>
