@@ -9,7 +9,7 @@ spring:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/segundoparcial
     username: postgres
-    password: Snaitaog_1
+    password: 
   jpa:
     hibernate:
       ddl-auto: create-drop
